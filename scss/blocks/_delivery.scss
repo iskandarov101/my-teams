@@ -1,3 +1,43 @@
 .delivery {
+    padding: 140px 0;
     background-color: #004047;
+}
+.delivery__heading {
+    margin: 0;
+    max-width: 932px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.delivery__heading-color {
+    color: $title;
+}
+.delivery__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.delivery__item {
+    list-style: none;
+    max-width: 350px;
+    width: 100%;
+}
+.delivery__text {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.delivery__user-name {
+}
+.delivery__jobs {
 }

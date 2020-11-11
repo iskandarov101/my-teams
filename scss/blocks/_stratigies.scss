@@ -1,0 +1,79 @@
+.stratigies {
+    padding: 140px 0;
+    background: #012F34;
+}
+.stratigies-container {
+    display: flex;
+    justify-content: space-between;
+}
+.stratigies__heading {
+    max-width: 445px;
+    margin: 0;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.stratigies__heading::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: $heading;
+    margin-bottom: 54px;
+}
+
+.stratigies__list {
+    max-width: 540px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.stratigies__item {
+    display: flex;
+    margin: 16px 0;
+}
+.stratigies__title {
+    margin: 0;
+    
+    margin-bottom: 8px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F67E7E;
+}
+.stratigies__text {
+    margin: 0;
+    margin-top: 8px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.stratigies__item::before {
+    content:  "";
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-right: 23px;
+}
+.stratigies__item--manager::before {
+    background-image: url("/img/stratigies-manager.svg");
+}
+.stratigies__item--settings::before {
+    background-image: url("/img/stratigies-sttings.svg");
+}
+.stratigies__item--graph::before {
+    background-image: url("/img/stratigies-graph.svg");
+}

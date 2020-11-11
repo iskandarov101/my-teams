@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.navbar__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__item {
+    margin-left: 40px;
+}
+
+.navbar__link {
+    text-decoration: none;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+
+}
+
+.navbar__contact-link {
+    margin-left: auto;
+    text-decoration: none;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 24px;
+    color: #FFFFFF;
+    padding: 8px 31px;
+}

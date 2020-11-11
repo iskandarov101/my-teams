@@ -718,6 +718,7 @@ img {
 
 .delivery__user-name {
   margin: 0;
+  margin-top: 24px;
   font-family: "Livvic";
   font-style: normal;
   font-weight: bold;
@@ -729,6 +730,7 @@ img {
 
 .delivery__jobs {
   display: block;
+  margin-top: 2px;
   font-family: "Livvic";
   font-style: italic;
   font-weight: 500;

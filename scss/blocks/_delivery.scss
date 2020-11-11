@@ -43,6 +43,7 @@
 }
 .delivery__user-name {
     margin: 0;
+    margin-top: 24px;
     font-family: "Livvic";
     font-style: normal;
     font-weight: bold;
@@ -53,6 +54,7 @@
 }
 .delivery__jobs {
     display: block;
+    margin-top: 2px;
     font-family: "Livvic";
     font-style: italic;
     font-weight: 500;
@@ -61,4 +63,19 @@
     text-align: center;
     color: #FFFFFF;
 
+}
+
+
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+    
 }

@@ -12,6 +12,8 @@
     line-height: 48px;
     text-align: center;
     color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
 }
 .delivery__heading-color {
     color: $title;
@@ -22,6 +24,7 @@
     align-items: center;
     margin: 0;
     padding: 0;
+    margin-top: 92px;
 }
 .delivery__item {
     list-style: none;
@@ -29,6 +32,7 @@
     width: 100%;
 }
 .delivery__text {
+    margin: 0;
     font-family: "Livvic";
     font-style: normal;
     font-weight: 600;
@@ -38,6 +42,23 @@
     color: #FFFFFF;
 }
 .delivery__user-name {
+    margin: 0;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #79C8C7;
 }
 .delivery__jobs {
+    display: block;
+    font-family: "Livvic";
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+
 }

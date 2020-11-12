@@ -7,3 +7,16 @@
     width: 100%;
     height: 100%;
 }
+
+@include breakpoint-down (750) {
+    .logo {
+        margin-right: 0;
+    }
+}   
+
+@include  breakpoint-down (650) {
+    .logo {
+        width: 138px;
+        height: 32px;
+    }
+}

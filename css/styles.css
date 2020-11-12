@@ -404,6 +404,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background: #014E56;
+  overflow-x: hidden;
 }
 
 img {
@@ -423,9 +424,9 @@ img {
 }
 
 .container {
-  max-width: 1440px;
-  padding-left: 165px;
-  padding-right: 165px;
+  max-width: 1190px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -462,6 +463,23 @@ img {
   background-color: gold;
   display: none;
   border: none;
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .site-header {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 48px;
+  }
+  .site-header__toggler {
+    display: block;
+    margin-left: auto;
+  }
 }
 
 .navbar {
@@ -513,6 +531,31 @@ img {
   padding: 8px 31px;
 }
 
+@media only screen and (max-width: 650px) {
+  .navbar {
+    display: none;
+  }
+  .site-header--open .navbar {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 100%;
+    height: 100%;
+    background-color: #9c9cb6;
+  }
+  .site-header--open .navbar__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px 0;
+  }
+}
+
 .logo {
   width: 160px;
   height: 40px;
@@ -524,11 +567,35 @@ img {
   height: 100%;
 }
 
+@media only screen and (max-width: 750px) {
+  .logo {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .logo {
+    width: 138px;
+    height: 32px;
+  }
+}
+
 .main-content {
   padding-top: 129px;
 }
 
-.demo {
+@media only screen and (max-width: 650px) {
+  .container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-content {
+    padding-top: 197px;
+  }
+}
+
+.demo__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,6 +610,7 @@ img {
 
 .demo__heading {
   margin: 0;
+  max-width: 635px;
   font-family: "Livvic";
   font-style: normal;
   font-weight: bold;
@@ -557,6 +625,8 @@ img {
 
 .demo__text {
   margin: 0;
+  min-width: 445px;
+  margin-left: 30px;
   font-family: "Livvic";
   font-style: normal;
   font-weight: 600;
@@ -573,6 +643,59 @@ img {
   height: 4px;
   background-color: #79C8C7;
   margin-bottom: 70px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .demo__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .demo__heading {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .demo__text {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+  .demo__text::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: auto;
+    margin-right: auto;
+  }
+  .demo__heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .demo__text {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .demo__wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .demo__text {
+    font-size: 24px;
+  }
 }
 
 .stratigies {

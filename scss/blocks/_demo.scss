@@ -1,4 +1,4 @@
-.demo {
+.demo__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -6,6 +6,7 @@
 }
 .demo__heading {
     margin: 0;
+    max-width: 635px;
     font-family: "Livvic";
     font-style: normal;
     font-weight: bold;
@@ -18,6 +19,8 @@
 }
 .demo__text {
     margin: 0;
+    min-width: 445px;
+    margin-left: 30px;
     font-family: "Livvic";
     font-style: normal;
     font-weight: 600;
@@ -37,3 +40,60 @@
     }
 
 }
+@include  breakpoint-down (1100) {
+    .demo__wrapper {
+        flex-direction: column;
+    }
+    .demo__heading {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .demo__text {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 24px;
+        &::before {
+            display: none;
+        }
+    }
+}
+
+@include  breakpoint-down (650) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-right: auto;
+        margin-right: auto;
+    }
+    .demo__heading {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 60px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .demo__text {
+        font-size: 24px;
+    }
+}
+@include breakpoint-down (600) {
+    .demo__wrapper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;     
+    }  
+    .demo__text {
+        font-size: 24px;
+    }
+  }
+//   @include breakpoint-down (500) {
+//     .demo__wrapper {
+//         padding-left: 10px;
+//         padding-right: 10px;  
+//         margin-left: auto;
+//         margin-right: auto;     
+//     }  
+//   }
+

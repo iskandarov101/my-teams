@@ -30,16 +30,17 @@
         </header>
 
         <!--MAIN-CONTENT -->
-
         <main class="main-content">
-            <div class="container">
                 <!-- DEMO -->
-                <section class="demo">
-                    <h1 class="demo__heading">Find the <br> best <span class="demo__heading--color"> talent</span></h1>
-                    <p class="demo__text">Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
-                </section>              
-            </div>
-
+            <section class="demo">
+                <div class="container">
+                    <div class="demo__wrapper">
+                        <h1 class="demo__heading">Find the <br> best <span class="demo__heading--color"> talent</span></h1>
+                        <p class="demo__text">Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+                    </div>                   
+                </div> 
+            </section>
+                         
             <!-- STRATIGIES-SECTION -->
             <section class="stratigies">
                 <div class="container stratigies-container">
@@ -123,17 +124,17 @@
                             <ul class=" footer__item--last-item-list">                
                                 <li class="footer__item--item">
                                     <a class="footer__item--inner-link" href="www.facebook.com">
-                                        <img class="footer__item--inner-logo" src="/img/facebool-link.svg" alt="facebook" width="24" height="24">
+                                        <img class="footer__item--inner-logo" src="/img/twitter-link.svg" alt="facebook" width="24" height="24">
                                     </a>
                                 </li>
                                 <li class="footer__item--item">
                                     <a class="footer__item--inner-link" href="www.pinterest.com">
-                                        <img class="footer__item--inner-logo" src="/img/pinterest-lnk.svg" alt="pinterest" width="24" height="24"> 
+                                        <img class="footer__item--inner-logo" src="/img/facebool-link.svg" alt="pinterest" width="24" height="24"> 
                                     </a>
                                 </li>
                                 <li class="footer__item--item">
                                     <a class="footer__item--inner-link" href="www.twitter.com">
-                                        <img class="footer__item--inner-logo" src="img/twitter-link.svg" alt="twitter" width="24" height="24">  
+                                        <img class="footer__item--inner-logo" src="/img/pinterest-lnk.svg" alt="twitter" width="24" height="24">  
                                     </a>
                                 </li>
                                 
@@ -144,5 +145,17 @@
                 </section>
             </div>
         </footer>
+
+        <script>
+            var burger = document.querySelector(".site-header__toggler");
+            var header = document.querySelector(".site-header");
+    
+        burger.addEventListener("click", function() {
+            header.classList.toggle("site-header--open");
+        });
+    
+    
+    
+        </script>
     </body>
 </html>

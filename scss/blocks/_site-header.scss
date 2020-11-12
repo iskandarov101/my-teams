@@ -12,3 +12,22 @@
     display: none;
     border: none;
 }
+
+@include breakpoint-down (650) {
+    .container {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .site-header {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 48px;
+    }
+    .site-header__toggler {
+        display: block;
+        margin-left: auto;
+    }
+    
+  }
+ 

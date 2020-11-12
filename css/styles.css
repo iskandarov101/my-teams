@@ -456,6 +456,14 @@ img {
           align-items: center;
 }
 
+.site-header__toggler {
+  width: 20px;
+  height: 18px;
+  background-color: gold;
+  display: none;
+  border: none;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -705,6 +713,29 @@ img {
   width: 100%;
 }
 
+.delivery__item::after {
+  content: "";
+  display: block;
+  width: 62px;
+  height: 62px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin: 32px auto;
+}
+
+.oval::after {
+  background-image: url("/img/Oval.png");
+}
+
+.kesishee::after {
+  background-image: url("/img/Keishee.png");
+}
+
+.arthur::after {
+  background-image: url("/img/arthur.png");
+}
+
 .delivery__text {
   margin: 0;
   font-family: "Livvic";
@@ -738,5 +769,46 @@ img {
   line-height: 18px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.cta {
+  background: #F67E7E;
+  padding: 76px 260px;
+}
+
+.cta__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cta__heading {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012F34;
+  margin: 0;
+}
+
+.cta__contact {
+  margin-left: auto;
+  text-decoration: none;
+  border: 2px solid #012F34;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 24px;
+  color: #FFFFFF;
+  padding: 8px 31px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #012F34;
 }
 /*# sourceMappingURL=styles.css.map */

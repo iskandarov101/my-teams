@@ -1,0 +1,33 @@
+.cta {
+    background: #F67E7E;
+    padding: 76px 260px;
+ 
+}
+.cta__wrapper {
+    display: flex;
+    align-items: center;
+}
+.cta__heading {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #012F34;
+    margin: 0;
+}
+.cta__contact {
+    margin-left: auto;
+    text-decoration: none;
+    border: 2px solid #012F34;
+    box-sizing: border-box;
+    border-radius: 24px;
+    color: #FFFFFF;
+    padding: 8px 31px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #012F34;
+}

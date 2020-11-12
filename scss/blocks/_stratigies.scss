@@ -77,3 +77,39 @@
 .stratigies__item--graph::before {
     background-image: url("/img/stratigies-graph.svg");
 }
+
+@include breakpoint-down (768) {
+    .stratigies {
+        width: 768px;
+
+    }
+    .container {
+        min-width: 770px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .stratigies-container {
+        flex-direction: column;
+    }
+    .stratigies__heading  {
+        width: 445px;
+        margin-left: 98px;
+        margin-bottom: 64px;
+        font-size: 32px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+    .stratigies__list {
+        margin-left: 98px;
+    }
+    .stratigies__title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .stratigies__text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}

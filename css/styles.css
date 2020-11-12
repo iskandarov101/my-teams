@@ -792,6 +792,44 @@ img {
   background-image: url("/img/stratigies-graph.svg");
 }
 
+@media only screen and (max-width: 768px) {
+  .stratigies {
+    width: 768px;
+  }
+  .container {
+    min-width: 770px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .stratigies-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .stratigies__heading {
+    width: 445px;
+    margin-left: 98px;
+    margin-bottom: 64px;
+    font-size: 32px;
+    line-height: 32px;
+    color: #FFFFFF;
+  }
+  .stratigies__list {
+    margin-left: 98px;
+  }
+  .stratigies__title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .stratigies__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
 .delivery {
   padding: 140px 0;
   background-color: #004047;

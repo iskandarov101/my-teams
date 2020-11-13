@@ -1,13 +1,5 @@
 .main-content {
-    padding-top: 129px;
+    padding-top: 197px;
+    flex-grow: 1;
 }
-@include breakpoint-down (650) {
-    .container {
-        width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .main-content {
-        padding-top: 197px;
-    }
-}
+

@@ -60,12 +60,6 @@
 }
 
 @include  breakpoint-down (650) {
-    .container {
-        padding-left: 24px;
-        padding-right: 24px;
-        margin-right: auto;
-        margin-right: auto;
-    }
     .demo__heading {
         font-style: normal;
         font-weight: bold;

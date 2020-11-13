@@ -79,19 +79,8 @@
 }
 
 @include breakpoint-down (768) {
-    .stratigies {
-        width: 768px;
-
-    }
-    .container {
-        min-width: 770px;
-        padding-left: 40px;
-        padding-right: 40px;
-        margin-right: auto;
-        margin-left: auto;
-    }
     .stratigies-container {
-        flex-direction: column;
+        display: block;
     }
     .stratigies__heading  {
         width: 445px;
@@ -113,3 +102,39 @@
         line-height: 25px;
     }
 }
+@include breakpoint-down (600) {
+    .stratigies-container {
+        display: block;
+    }
+    .stratigies__heading  {
+        width: 240px;
+        margin-left: 24px;
+        margin-bottom: 56px;
+        font-size: 32px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+    .stratigies__list {
+        margin-left: 24px;
+        flex-direction: column;
+    }
+    .stratigies__item {
+        flex-direction: column;
+        width: 327px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .stratigies__item::before {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .stratigies__title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .stratigies__text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+} 

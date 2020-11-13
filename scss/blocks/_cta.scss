@@ -1,7 +1,7 @@
 .cta {
     background: #F67E7E;
-    padding: 76px 260px;
- 
+    padding: 76px 0;
+    max-width: 100%;
 }
 .cta__wrapper {
     display: flex;
@@ -30,4 +30,14 @@
     font-size: 18px;
     line-height: 28px;
     color: #012F34;
+}
+@include breakpoint-down (800) {
+    .cta__wrapper  {
+        flex-direction: column;
+        width: auto;
+        
+    }
+    .cta__contact {
+        margin-right: auto;
+    }
 }

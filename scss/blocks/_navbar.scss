@@ -36,16 +36,24 @@
     padding: 8px 31px;
 }
 @include  breakpoint-down (650) {
+    
     .navbar {
+        display: none;
+    }
+
+    .navbar__contact-link {
         display: none;
     }
     .site-header--open .navbar {
         display: block;
         position: absolute;
+        z-index: 5;
         right: 0;
         top: 80px;
         width: 100%;
         height: 100%;
+        padding-top: 112px;
+        padding-left: 48px;
         background-color: rgb(156, 156, 182);
     }
     .site-header--open .navbar__list {

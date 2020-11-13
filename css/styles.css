@@ -1098,6 +1098,55 @@ img {
   }
 }
 
+.about {
+  background-image: url("/img/about-intro-bg.png");
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: calc(50% + 680px) bottom;
+}
+
+.about__wrapper {
+  padding: 124px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__title {
+  max-width: 350px;
+  margin: 0;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100px;
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+
+.about__text {
+  max-width: 730px;
+  margin: 0;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.about__text::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #F67E7E;
+  margin-bottom: 40px;
+}
+
 .site-footer {
   background-color: #002529;
   padding: 48px 0;

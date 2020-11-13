@@ -30,14 +30,21 @@
     font-size: 18px;
     line-height: 28px;
     color: #012F34;
+    white-space: nowrap;;
 }
 @include breakpoint-down (800) {
-    .cta__wrapper  {
-        flex-direction: column;
-        width: auto;
-        
-    }
     .cta__contact {
         margin-right: auto;
+    }
+    .cta__heading {
+        font-size: 32px;
+        line-height: 32px;
+        color: #012F34;
+    }
+    .cta__contact {
+        margin-left: auto;
+        border: 2px solid #012F34;
+        font-size: 18px;
+        line-height: 28px;
     }
 }

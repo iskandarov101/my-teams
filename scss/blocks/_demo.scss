@@ -19,7 +19,7 @@
 }
 .demo__text {
     margin: 0;
-    min-width: 445px;
+    max-width: 445px;
     margin-left: 30px;
     font-family: "Livvic";
     font-style: normal;
@@ -63,31 +63,17 @@
     .demo__heading {
         font-style: normal;
         font-weight: bold;
-        font-size: 64px;
-        line-height: 60px;
+        font-size: 48px;
+        line-height: 50px;
         text-align: center;
         color: #FFFFFF;
     }
     .demo__text {
-        font-size: 24px;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: center;
+        max-width: 440px;
     }
 }
-@include breakpoint-down (600) {
-    .demo__wrapper {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;     
-    }  
-    .demo__text {
-        font-size: 24px;
-    }
-  }
-//   @include breakpoint-down (500) {
-//     .demo__wrapper {
-//         padding-left: 10px;
-//         padding-right: 10px;  
-//         margin-left: auto;
-//         margin-right: auto;     
-//     }  
-//   }
+
 

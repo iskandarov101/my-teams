@@ -2,4 +2,9 @@
     padding-top: 197px;
     flex-grow: 1;
 }
+@include breakpoint-down (650) {
+    .main-content {
+        padding-top: 80px;
+    }
+}
 

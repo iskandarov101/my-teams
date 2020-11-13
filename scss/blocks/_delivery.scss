@@ -29,7 +29,6 @@
 .delivery__item {
     list-style: none;
     max-width: 350px;
-    width: 100%;
 }
 .delivery__item::after {
     content: "";
@@ -59,6 +58,7 @@
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
+    max-width: 100%;
 }
 .delivery__user-name {
     margin: 0;
@@ -83,14 +83,24 @@
     color: #FFFFFF;
 
 }
+@include breakpoint-down (1000) {
+    .delivery__item {
+        max-width: 200px;
+    }
+}
+@include breakpoint-down (900) {
+    .delivery__list {
+        flex-direction: column;
+    }
+}
 
 @include breakpoint-down (768) {
    
     .delivery__heading {
-        width: 573px;
+        max-width: 573px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 84px;
+        margin-bottom: 64px;
         font-size: 32px;
         line-height: 32px;       
     }
@@ -98,21 +108,20 @@
         flex-direction: column;
     }
     .delivery__item {
-        width: 573px;
+        max-width: 573px;
         margin: 0;
         margin-left: auto;
         margin-right: auto;
-        flex-direction: column;
-        margin-bottom: 84px;
+        margin-bottom: 64px;
     }
 }
 @include breakpoint-down (600) {
- 
+   
     .delivery__heading {
-        width: 327px;
+        max-width: 327px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 84px;
+        margin-bottom: 34px;
         font-size: 32px;
         line-height: 32px;       
     }
@@ -120,15 +129,15 @@
         flex-direction: column;
     }
     .delivery__item {
-        width: 327px;
+        max-width: 327px;
         margin: 0;
         margin-left: auto;
         margin-right: auto;
         flex-direction: column;
-        margin-bottom: 84px;
+        margin-bottom: 34px;
     }
 } 
-@include breakpoint-up (300){
+@include breakpoint-up (500){
     .delivery__heading {
         margin-left: auto;
         margin-right: auto;
@@ -136,16 +145,14 @@
         font-size: 32px;
         line-height: 32px;       
     }
-    .delivery__list {
-        flex-direction: column;
-    }
+    
     .delivery__item {
-        width: 327px;
+        max-width: 327px;
         margin: 0;
         margin-left: auto;
         margin-right: auto;
         flex-direction: column;
-        margin-bottom: 84px;
+        margin-bottom: 24px;
     }
 }
 

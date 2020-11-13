@@ -23,6 +23,7 @@
     font-size: 18px;
     line-height: 28px;
     color: #FFFFFF;
+    
 
 }
 
@@ -34,6 +35,10 @@
     border-radius: 24px;
     color: #FFFFFF;
     padding: 8px 31px;
+    &:hover {
+        background-color: #fff;
+        color: #212b41;
+      }
 }
 @include  breakpoint-down (650) {
     

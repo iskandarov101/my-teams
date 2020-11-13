@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     list-style-type: none;
 }
@@ -25,6 +26,7 @@
 
 .footer__item--address {
     margin-left: 125px;
+    margin-right: 20px;
 }
 .footer__item--inner-item {
     margin-top: 25px;
@@ -91,7 +93,21 @@
 }
 
 @include breakpoint-down (800) {
-    .site-footer {
-        max-width: 100%;
+    .footer__list {
+        justify-content: space-between;
+        
+    }
+    .footer__item--address {
+        text-align: right;
+        
+    }
+    .footer__item--last-item {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 34px;
+    }
+    .footer__item--address {
+        margin-right: 0px;
     }
 }

@@ -11,14 +11,13 @@
     background-color: gold;
     display: none;
     border: none;
+   
 }
 
 @include breakpoint-down (650) {
-    
-    .site-header {
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 48px;
+        
+    .site-header { 
+        padding: 48px 0;
     }
     .site-header__toggler {
         display: block;

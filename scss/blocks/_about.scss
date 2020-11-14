@@ -2,7 +2,7 @@
     background-image: url("/img/about-intro-bg.png");
     background-repeat: no-repeat;
     background-size: 200px 200px;
-    background-position: calc(50% + 680px) bottom ;
+    background-position: calc(50% + 715px) bottom ;
 }
 .about__wrapper {
     padding: 124px 0;
@@ -19,6 +19,7 @@
     line-height: 100px;
     color: #FFFFFF;
     text-transform: capitalize;
+    margin-right: 40px;
 }
 .about__text {
     max-width: 730px;
@@ -38,4 +39,84 @@
         background-color: #F67E7E;
         margin-bottom: 40px;
     }
+}
+
+@include breakpoint-down (1080) {
+    .about {
+        background-image: url("/img/about-intro-bg.png");
+        background-repeat: no-repeat;
+        background-size: 200px 200px;
+        background-position: right -132px bottom 0px;
+    }
+    .about__title {
+        font-size: 64px;
+        line-height: 100px;
+        width: 683px;
+        text-align: center;
+    }
+}
+
+@include breakpoint-down (767) {
+    .logo {
+        width: 128px;
+        height: 32px;
+    }
+    .about {
+        background-image: url("/img/about-intro-bg.png");
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+        background-position: right -75px bottom;
+    }
+    .about__wrapper {
+        flex-wrap: wrap;
+    }
+    .about__title {
+        font-size: 64px;
+        line-height: 100px;
+        width: 683px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .about__text {
+        width: 457px;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: center;
+        margin: 24px auto 0px auto;
+        &::before {
+            display: none;
+        }
+    }
+}
+@include breakpoint-down (650) {
+        .site-header {
+            padding: 0;
+            padding-top: 48px;
+        }
+        .about__wrapper {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .about {
+            background-image: url("/img/about-intro-bg.png");
+            background-repeat: no-repeat;
+            background-size: 200px 200px;
+            background-position: right -132px bottom 0px;
+        }
+        .about__title {
+            padding-top: 80px;
+            font-size: 40px;
+            line-height: 30px;
+            width: 327px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .about__text {
+            font-size: 15px;
+            line-height: 28px;
+            width: 327px;
+            padding-bottom: 108px;
+        }
 }

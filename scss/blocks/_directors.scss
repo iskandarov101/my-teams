@@ -1,15 +1,15 @@
 .directors {
     background-color: #004047;
-    padding-top: 140px;
     background-image: url("/img/directors-bg.png");
     background-repeat: no-repeat;
     background-size: 200px 200px;
-    background-position: calc(50% + 0);
+    background-position: calc(50% - 675px) top;
 }
 .directors__heading {
+    padding-top: 140px;
     text-align: center;
     margin: 0;
-    font-family: "Livvic";
+    font-family: "Livvic", "arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -17,37 +17,113 @@
     color: $text;
 }
 .directors__list {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+    padding-top: 64px;
+    box-sizing: border-box;
     margin: 0 -15px;
-    
 }
+
 .directors__item {
-    max-width: 350px;
-    padding-top: 32px;
-    margin: 0 15px;
-    background-color: lavender;
+    background-color: #012F34;
+    width: 350px;
+
+    &:nth-child(2), 
+    &:nth-child(5) {
+        margin: 0 30px;
+    }
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+        margin-top: 76px;
+        margin-bottom: 168px;
+        
+    }
+    &:nth-child(6) {
+        padding-top: 34px;
+        
+     }
 }
-.directors__item--name {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 28px;
-    text-align: center;
-    color: $title;
+
+    .directors__item--name {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: $title;  
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &::before {
+            content: "";
+            border-radius: 50%;
+            width: 96px;
+            height: 96px;
+            margin-top: 32px;
+            margin-bottom: 18px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        
+       
+    }   
+    .directors__name--active::before {
+        display: none;
+        margin-top: 35px;
+    }
+    .nikita::before {
+        background-image: url("/img/nikitia.jpg");
+    }
+    .cristian::before {
+        background-image: url("/img/cristian.jpg");
+    }
+    .hamer::before {
+        background-image: url("/img/hammer.jpg");
+    }
+    .heaton::before {
+        background-image: url("/img/heaton.jpg");
+    }
+    .griffen::before {
+        background-image: url("/img/griffen.jpg");
+    }
+    .directors__item--job {
+        display: block;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: $text;
+        text-align: center;
+        padding-bottom: 56px;
+
+
+    }
+    .directors__item--job-active {
+        padding: 0;
+    }
+.director__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    max-width: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+.director__item {
+    display: block;
+    margin: 0 5px;
+}
 
     
-}
 
-.directors__item--job {
-    display: block;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 25px;
-    color: $text;
-    text-align: center;
-}
+
+
+
+

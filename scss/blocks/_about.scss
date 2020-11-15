@@ -71,10 +71,6 @@
         flex-wrap: wrap;
     }
     .about__title {
-        font-size: 64px;
-        line-height: 100px;
-        width: 683px;
-        text-align: center;
         margin: 0 auto;
     }
     .about__text {
@@ -116,7 +112,9 @@
         .about__text {
             font-size: 15px;
             line-height: 28px;
-            width: 327px;
+            max-width: 550px;
+            padding-left: 30px;
+            padding-right: 30px;
             padding-bottom: 108px;
         }
 }

@@ -167,5 +167,14 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
+.oval::after {
+    background-image: url("/img/Oval@2x.png");
+}
+.kesishee::after {
+    background-image: url("/img/Keishee\ @2x.png");
+}
+.arthur::after {
+    background-image: url("/img/Arthur@2x.png");
+}
 
 }

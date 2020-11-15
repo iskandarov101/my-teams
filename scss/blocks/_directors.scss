@@ -48,65 +48,63 @@
      }
 }
 
-    .directors__item--name {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 28px;
-        text-align: center;
-        color: $title;  
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &::before {
-            content: "";
-            border-radius: 50%;
-            width: 96px;
-            height: 96px;
-            margin-top: 32px;
-            margin-bottom: 18px;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-        }
-        
-       
-    }   
-    .directors__name--active::before {
-        display: none;
-        margin-top: 35px;
+.directors__item--name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: $title;  
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::before {
+        content: "";
+        border-radius: 50%;
+        width: 96px;
+        height: 96px;
+        margin-top: 32px;
+        margin-bottom: 18px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
-    .nikita::before {
-        background-image: url("/img/nikitia.jpg");
-    }
-    .cristian::before {
-        background-image: url("/img/cristian.jpg");
-    }
-    .hamer::before {
-        background-image: url("/img/hammer.jpg");
-    }
-    .heaton::before {
-        background-image: url("/img/heaton.jpg");
-    }
-    .griffen::before {
-        background-image: url("/img/griffen.jpg");
-    }
-    .directors__item--job {
-        display: block;
-        font-style: italic;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 25px;
-        color: $text;
-        text-align: center;
-        padding-bottom: 56px;
-
-
-    }
-    .directors__item--job-active {
-        padding: 0;
-    }
+    
+   
+}   
+.directors__name--active::before {
+    display: none;
+    margin-top: 35px;
+}
+.nikita::before {
+    background-image: url("/img/nikitia.jpg");
+}
+.cristian::before {
+    background-image: url("/img/cristian.jpg");
+}
+.hamer::before {
+    background-image: url("/img/hammer.jpg");
+}
+.heaton::before {
+    background-image: url("/img/heaton.jpg");
+}
+.griffen::before {
+    background-image: url("/img/griffen.jpg");
+}
+.directors__item--job {
+    display: block;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: $text;
+    text-align: center;
+    padding-bottom: 56px;
+}
+.directors__item--job-active {
+    padding: 0;
+}
 .director__list {
     list-style-type: none;
     padding: 0;
@@ -121,7 +119,36 @@
     margin: 0 5px;
 }
 
-    
+
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .directors {
+        background-image: url("/img/directors-bg@2x.png");
+    }
+    .nikita::before {
+        background-image: url("/img/nikitia@2x.jpg");
+    }
+    .cristian::before {
+        background-image: url("/img/cristian@2x.jpg");
+    }
+    .hamer::before {
+        background-image: url("/img/hammer@2x.jpg");
+    }
+    .heaton::before {
+        background-image: url("/img/heaton@2x.jpg");
+    }
+    .griffen::before {
+        background-image: url("/img/griffen@2x.jpg");
+    }
+}
 
 
 

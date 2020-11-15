@@ -1085,6 +1085,18 @@ img {
   }
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .oval::after {
+    background-image: url("/img/Oval@2x.png");
+  }
+  .kesishee::after {
+    background-image: url("/img/Keishee @2x.png");
+  }
+  .arthur::after {
+    background-image: url("/img/Arthur@2x.png");
+  }
+}
+
 .cta {
   background: #F67E7E;
   padding: 76px 0;
@@ -1422,6 +1434,27 @@ img {
 .director__item {
   display: block;
   margin: 0 5px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .directors {
+    background-image: url("/img/directors-bg@2x.png");
+  }
+  .nikita::before {
+    background-image: url("/img/nikitia@2x.jpg");
+  }
+  .cristian::before {
+    background-image: url("/img/cristian@2x.jpg");
+  }
+  .hamer::before {
+    background-image: url("/img/hammer@2x.jpg");
+  }
+  .heaton::before {
+    background-image: url("/img/heaton@2x.jpg");
+  }
+  .griffen::before {
+    background-image: url("/img/griffen@2x.jpg");
+  }
 }
 
 .site-footer {

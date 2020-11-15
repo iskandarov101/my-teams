@@ -2,6 +2,10 @@
     background: #F67E7E;
     padding: 76px 0;
     max-width: 100%;
+    background-image: url("/img/cta-bg.png");
+    background-repeat: no-repeat;
+    background-size: 200px 244px;
+    background-position: calc(50% - 580px) 60px;
 }
 .cta__wrapper {
     display: flex;

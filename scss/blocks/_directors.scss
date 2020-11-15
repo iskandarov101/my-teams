@@ -40,11 +40,9 @@
     &:nth-child(6) {
         margin-top: 76px;
         margin-bottom: 168px;
-        
     }
     &:nth-child(6) {
-        padding-top: 34px;
-        
+        padding-top: 34px; 
      }
 }
 
@@ -69,10 +67,9 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-    }
-    
-   
+    } 
 }   
+
 .directors__name--active::before {
     display: none;
     margin-top: 35px;
@@ -112,24 +109,217 @@
     display: flex;
     max-width: 80px;
     justify-content: space-between;
-    align-items: center;
+
 }
 .director__item {
     display: block;
     margin: 0 5px;
 }
+@include breakpoint-down (1160) {
+    .directors {
+        background-image: url("/img/directors-bg.png");
+        background-repeat: no-repeat;
+        background-size: 200px 200px;
+        background-position: calc(50% - 575px) top;
+    }
 
+    .directors__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 64px;
+        box-sizing: border-box;
+        margin: 0 -15px;
+    }
+    
+    .directors__item {
+        background-color: #012F34;
+        width: 330px;
+    
+        &:nth-child(2), 
+        &:nth-child(5) {
+            margin: 0 30px;
+        }
+        &:nth-child(6) {
+            height: 253px;
+        }
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+            margin-top: 76px;
+            margin-bottom: 168px;
+            
+        }
+        &:nth-child(6) {
+            padding-top: 34px;
+            
+         }
+    }
+}
+@include breakpoint-down (1100) {
+    .directors {
+        background-image: url("/img/directors-bg.png");
+        background-repeat: no-repeat;
+        background-size: 200px 200px;
+        background-position: calc(50% - 555px) top;
+    }
+    .directors__list {
+        padding-top: 64px;
+    }
+    .directors__item {
+        width: 300px;
+    }
+}
+@include breakpoint-down (1050) {
+    .directors {
+        background-image: url("/img/directors-bg.png");
+        background-repeat: no-repeat;
+        background-size: 200px 200px;
+        background-position: calc(50% - 525px) top;
+    }
 
+    .directors__list {          
+        margin: 0 auto;
+    }
+    .directors__item {
+        width: 280px;
+       height: 250px; 
+       &:nth-child(2) {
+           margin: 0;
+       }
+       &:nth-child(5) {
+           margin-left: 0;
+           margin-right: 0;
+       }
+    }
+}
+@include breakpoint-down (950) {
+    .directors {
+        background-image: url("/img/directors-bg.png");
+        background-repeat: no-repeat;
+        background-size: 200px 200px;
+        background-position: calc(50% - 490px) top;
+    }
 
+    .directors__list {          
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .directors__item  {
+        margin: 0;
+        padding: 0;
+        width: 281px;
+        height: 253px;
+        &:nth-child(odd) {
+            margin-left: 97px;
+            margin-right: 10px;
+           
+        }
+        &:nth-child(even) {
+            margin-right: 97px;
+            margin-left: 10px;
+           
+        }
+        &:nth-child(4) {
+            margin: 0;
+            margin-right: 97px;
+        }
+        &:nth-child(3),
+        &:nth-child(4){
+            margin-top: 76px;
+        }
+        .directors__item:nth-child(5), 
+        .directors__item:nth-child(6) {
+            margin-top: 76px;
+            margin-bottom: 128px;
+        }
 
+    }
+}
+@include breakpoint-down (860) {
+    .directors {
+        background-image: url("/img/directors-bg.png");
+        background-repeat: no-repeat;
+        background-size: 200px 200px;
+        background-position: calc(50% - 450px) top;
+    }
+    .directors__item  {
+        margin: 0;
+        &:nth-child(odd) {
+            margin-left: 43px;
+            margin-right: 10px;
+           
+        }
+        &:nth-child(even) {
+            margin-right: 43px;
+            margin-left: 10px;
+           
+        }
+    }   
+    
+}
+@include breakpoint-down (768) {
+    .directors {
+        background-image: url("/img/directors-bg.png");
+        background-repeat: no-repeat;
+        background-size: 200px 200px;
+        background-position: calc(50% - 400px) top;
+    }
+    .directors__list {
+        padding: 0;
+        padding-bottom: 128px;
+    }
+    .directors__item  {
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+            margin: 0;
+            padding: 0;
+            margin-top: 54px;
+
+        }
+    }   
+    .directors__name--active{ 
+        margin-top: 35px;
+    }
+    
+}
+@include breakpoint-down (668) {
+    .directors {
+        background-image: url("/img/directors-bg.png");
+        background-repeat: no-repeat;
+        background-size: 200px 200px;
+        background-position: left -100px top -100px;
+    }
+    .directors__heading {
+        font-size: 32px;
+        line-height: 32px;
+        padding-top: 88px;
+    }
+    .directors__list {
+        padding-top: 0;
+        margin: 0 auto;
+        justify-content: center;
+        padding-bottom: 116px;
+    }
+    .directors__item  {
+       width: 327px;
+       height: 253px;
+        text-align: center;
+        margin: 0 auto;
+    }   
+    
+    
+}
+
+@include retina-bg {
+
     .directors {
         background-image: url("/img/directors-bg@2x.png");
     }

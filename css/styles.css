@@ -1145,6 +1145,10 @@ img {
 }
 
 @media only screen and (max-width: 800px) {
+  .cta {
+    background-image: url("/img/cta-bg.png");
+    background-position: calc(50% - 290px) 75px;
+  }
   .cta__contact {
     margin-right: auto;
   }
@@ -1152,6 +1156,7 @@ img {
     font-size: 32px;
     line-height: 32px;
     color: #012F34;
+    text-align: center;
   }
   .cta__contact {
     margin-left: auto;
@@ -1161,11 +1166,30 @@ img {
   }
 }
 
+@media only screen and (max-width: 660px) {
+  .cta {
+    background-image: url("/img/cta-bg.png");
+    background-position: calc(50% - 100px) 170px;
+  }
+  .cta__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cta__contact {
+    margin-top: 30px;
+  }
+}
+
 .about {
   background-image: url("/img/about-intro-bg.png");
   background-repeat: no-repeat;
   background-size: 200px 200px;
-  background-position: right 100px bottom 150px;
+  background-position: calc(50% + 675px) 200px;
 }
 
 .about__wrapper {
@@ -1683,6 +1707,69 @@ img {
           align-items: center;
   padding-top: 70px;
   padding-bottom: 151px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .clients {
+    background-position: calc(50% - 400px) top;
+  }
+  .clients__list {
+    max-width: 789px;
+    margin: 0 auto;
+  }
+  .clients__item:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .clients__list {
+    padding-top: 50px;
+    max-width: 600px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .clients__item {
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .clients {
+    background-position: calc(50% - 300px) top;
+  }
+  .clients__heading {
+    padding-top: 100px;
+    font-size: 42px;
+    line-height: 32px;
+  }
+  .clients__item:not(:last-child) {
+    margin-right: 25px;
+  }
+  .clients__list {
+    padding-bottom: 111px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .clients {
+    background-position: calc(50% - 250px) -100px;
+  }
+  .clients__heading {
+    padding-top: 88px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .clients__list {
+    padding-bottom: 88px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clients__item:not(:last-child) {
+    margin-bottom: 56px;
+  }
 }
 
 .site-footer {
